@@ -29,7 +29,6 @@ class UsersProcessor {
   }
 
   add(data: {purchases: [{type: string, amount: number}]}) {
-    logger.info('adding');
     const currentUserTypes = [];
     data.purchases.forEach((purchase) => {
       let unique = false;
